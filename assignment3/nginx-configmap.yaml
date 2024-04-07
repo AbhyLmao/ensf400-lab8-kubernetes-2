@@ -11,10 +11,10 @@ data:
           server app-1-svc:8080;
           server app-2-svc:8080;
       }
-
       server {
           location / {
               proxy_pass http://backend;
           }
       }
     }
+
