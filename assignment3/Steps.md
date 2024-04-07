@@ -26,7 +26,25 @@ kubectl apply -f .
 kubectl apply -f <file-name>
 ```
 
+## - Test your configuration
 
+* To get the IP address, run the command -
+```bash
+minikube ip
+```
+
+* Use the output from the command above, and run - 
+```bash
+curl http:// <ip> /
+
+```
+
+* To do both in the same step - 
+```bash
+curl http://$(minikube ip)/
+```
+
+## - Check your deployments/Troubleshoot
 
 
 \
